@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes fade {
+            100% {
+                opacity: 100;
+            }
+            0% {
+                opacity: 0;
+            }
+        }
+        #box {
+            width: 82rem;
+            height: 50rem;
+            animation-name: fade;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            img{
+                width: 82rem;
+                height: 50rem;
+            }
+        }
+        #box2 {
+            translate: 0rem -50rem;
+            width: 82rem;
+            height: 50rem;
+            animation-name: fade;
+            animation-duration: 3s;
+            animation-delay: 1.5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            img{
+                width: 82rem;
+                height: 50rem;
+            }
+        }
+        #box3 {
+            translate: 0rem -100rem;
+            width: 82rem;
+            height: 50rem;
+            animation-name: fade;
+            animation-duration: 3s;
+            animation-delay: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            img{
+                width: 82rem;
+                height: 50rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="box"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-ZUlnvuOefs0yoioRIyrxS-Txxn7bApQ_sw&s" alt="night"></div>
+    <div id="box2"><img src="https://t3.ftcdn.net/jpg/02/13/74/10/360_F_213741013_qEmPTT6NqRHTFAKw3pOVGiyH69Nn0k5h.jpg" alt="sunrise"></div>
+    <div id="box3"><img src="https://media.istockphoto.com/id/491701259/photo/blue-sky-with-sun.jpg?s=612x612&w=0&k=20&c=aB7c-e0YFezBb8cgSykiEcAh_2fXEie3inIudnsNa9g=" alt="day"></div>
+</body>
+</html>
