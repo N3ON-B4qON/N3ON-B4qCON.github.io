@@ -1,0 +1,26 @@
+#CoverBacG {
+    position: absolute;
+    translate: 0rem -50px;
+    z-index: 1;
+}
+#BackIMGA {
+    height: 74rem;
+    width: 83rem;
+}
+#TitleCardCard {
+    position: absolute;
+    z-index: 2;
+    translate: 21rem 32rem;
+}
+#TitleText {
+    position: absolute;
+    font-family: "Blippo";
+    color: #FFBD00;
+    z-index: 2;
+    translate: 11rem 15rem;
+    font-size: 8rem;
+}
+@font-face {
+    font-family: 'Blippo'; /*a name to be used later*/
+    src: url(BlippoRegular.ttf); /*URL to font*/
+}
