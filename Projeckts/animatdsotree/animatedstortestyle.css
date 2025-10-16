@@ -24,3 +24,22 @@
     font-family: 'Blippo'; /*a name to be used later*/
     src: url(BlippoRegular.ttf); /*URL to font*/
 }
+#pagebutton {
+    position: fixed;
+    z-index: 3;
+    translate: 52rem 21rem;
+    cursor: pointer;
+}
+#ButtonVisual {
+    scale: -0.4 0.4;
+}
+pagebutton:hover {
+    color: white;
+}
+@keyframes fadeinreverse {
+    from { opacity: 1; }   /* Start fully visible */
+    to { opacity: 0; }     /* End fully transparent */
+}
+pagebutton.fade-out {
+    animation: fadeinreverse 1.3s forwards;
+}
