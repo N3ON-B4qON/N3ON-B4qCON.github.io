@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.addEventListener('keydown',(event) => {
+            if (event.key === "Enter"|| event.code === "13"){
+                pizname()
+            }
+        })
+    </script>
+    <div>Please Put a Name for the Pizza</div>
+    <br>
+    <input id="noname" autofocus>
+    <button onclick="pizname()">enter</button>
+</body>
+<script src="java.js"></script>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="java.js"></script>
+    <h1>This is the pizza YOU created</h1>
+    <div id="namepiz"></div>
+    <div id="pricepiz"></div>
+</body>
+<script>
+    window.onload = function() {
+            // in a single line of code, get thekey and output the value to the placeholder
+            document.getElementById('namepiz').innerHTML = localStorage.getItem('namepizza')
+            document.getElementById('pricepiz').innerHTML = localStorage.getItem('pricepizza')
+        }
+</script>
+</html>
