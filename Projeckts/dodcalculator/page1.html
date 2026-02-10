@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.addEventListener('keydown',(event) => {
+            if (event.key === "Enter"|| event.code === "13"){
+                whosname()
+            }
+        })
+    </script>
+    <div id="deathintro">Please type your name in the box, then press the ENTER key.</div>
+    <input id="noname" autofocus>
+    <button onclick="whosname()">enter</button>
+    <script>
+        window.onload = function() {
+            if (localStorage.getItem('namedeath') != null); {
+                document.getElementById('deathintro').innerHTML = "Welcome back " + localStorage.getItem('namedeath') + ". If you wish to clear your name, type clear & press the ENTER key.";
+            }
+        }
+    </script>
+</body>
+<script src="deadjava.js"></script>
+</html>

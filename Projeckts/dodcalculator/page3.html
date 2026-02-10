@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="minuteslefttolivept1"></div>
+    <div id="minuteslefttolivept2"></div>
+    <h1>MAKE. IT. COUNT.</h1>
+</body>
+<script>
+    window.onload = function() {
+            // in a single line of code, get thekey and output the value to the placeholder
+            document.getElementById('minuteslefttolivept1').innerHTML = "Hello " + localStorage.getItem('namedeath') + " you are " + localStorage.getItem('agedeath1') + " years old. The average age of death is 86."
+            document.getElementById('minuteslefttolivept2').innerHTML = "You have " + localStorage.getItem('agedeath2') + " years left to live."
+        }
+        document.addEventListener('keydown',(event) => {
+            if (event.key === "Enter"|| event.code === "13"){
+                location.href = "page1.html"
+            }
+        })
+</script>
+<script src="deadjava.js"></script>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.addEventListener('keydown',(event) => {
+            if (event.key === "Enter"|| event.code === "13"){
+                agedead()
+            }
+        })
+    </script>
+    <div id="ageask"></div>
+    <input id="noage" autofocus>
+    <button onclick="agedead()">enter</button>
+</body>
+<script src="deadjava.js"></script>
+<script>
+    window.onload = function() {
+            // in a single line of code, get thekey and output the value to the placeholder
+            document.getElementById('ageask').innerHTML = "Hello " + localStorage.getItem('namedeath') + ". Could you please type your age in the box"
+        }
+</script>
+</html>
