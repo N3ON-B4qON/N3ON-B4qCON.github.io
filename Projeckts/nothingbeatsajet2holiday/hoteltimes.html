@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jet2javascript.js"></script>
+</head>
+<body>
+    <h1>Welcome to the Check-in & Check-out Times</h1>
+    <button onclick="go_on_a_vacation()">Go Back to the Check-in & Check-out Page</button>
+    <h2>Check-in & Check-out Times for Room 101</h2>
+    <div id="timet101">Check-ins: </div>
+    <div id="timep101">Check-outs: </div>
+    <br>
+    <h2>Check-in & Check-out Times for Room 102</h2>
+    <div id="timet102">Check-ins: </div>
+    <div id="timep102">Check-outs: </div>
+    <br>
+    <h2>Check-in & Check-out Times for Room Room 103</h2>
+    <div id="timet103">Check-ins: </div>
+    <div id="timep103">Check-outs: </div>
+    <br>
+    <h2>Check-in & Check-out Times for Room Room 104</h2>
+    <div id="timet104">Check-ins: </div>
+    <div id="timep104">Check-outs: </div>
+    <h2>Check-in & Check-out Times for Room Room 105</h2>
+    <div id="timet105">Check-ins: </div>
+    <div id="timep105">Check-outs: </div>
+    <h2>Check-in & Check-out Times for Room Room 106</h2>
+    <div id="timet106">Check-ins: </div>
+    <div id="timep106">Check-outs: </div>
+</body>
+<script>
+    // TIMES FOR 101
+    window.onload = function() {
+        if (localStorage.getItem('checkin101') != null); {
+            document.getElementById('timet101').innerHTML = "Check-ins: " + localStorage.getItem('checkin101')
+        }
+    }
+    window.onload = function() {
+        if (localStorage.getItem('checkout101') != null); {
+            document.getElementById('timep101').innerHTML = "Check-outs: " + localStorage.getItem('checkout101')
+        }
+    }
+    // TIMES FOR 102
+    window.onload = function() {
+        if (localStorage.getItem('checkin102') != null); {
+            document.getElementById('timet102').innerHTML = "Check-ins: " + localStorage.getItem('checkin102')
+        }
+    }
+    window.onload = function() {
+        if (localStorage.getItem('checkout102') != null); {
+            document.getElementById('timep102').innerHTML = "Check-outs: " + localStorage.getItem('checkout102')
+        }
+    }
+    // TIMES FOR 103
+    window.onload = function() {
+        if (localStorage.getItem('checkin103') != null); {
+            document.getElementById('timet103').innerHTML = "Check-ins: " + localStorage.getItem('checkin103')
+        }
+    }
+    window.onload = function() {
+        if (localStorage.getItem('checkout103') != null); {
+            document.getElementById('timep103').innerHTML = "Check-outs: " + localStorage.getItem('checkout103')
+        }
+    }
+    // TIMES FOR 104
+    window.onload = function() {
+        if (localStorage.getItem('checkin104') != null); {
+            document.getElementById('timet104').innerHTML = "Check-ins: " + localStorage.getItem('checkin104')
+        }
+    }
+    window.onload = function() {
+        if (localStorage.getItem('checkout104') != null); {
+            document.getElementById('timep104').innerHTML = "Check-outs: " + localStorage.getItem('checkout104')
+        }
+    }
+    // TIMES FOR 105
+    window.onload = function() {
+        if (localStorage.getItem('checkin105') != null); {
+            document.getElementById('timet105').innerHTML = "Check-ins: " + localStorage.getItem('checkin105')
+        }
+    }
+    window.onload = function() {
+        if (localStorage.getItem('checkout105') != null); {
+            document.getElementById('timep105').innerHTML = "Check-outs: " + localStorage.getItem('checkout105')
+        }
+    }
+    // TIMES FOR 106
+    window.onload = function() {
+        if (localStorage.getItem('checkin106') != null); {
+            document.getElementById('timet106').innerHTML = "Check-ins: " + localStorage.getItem('checkin106')
+        }
+    }
+    window.onload = function() {
+        if (localStorage.getItem('checkout106') != null); {
+            document.getElementById('timep106').innerHTML = "Check-outs: " + localStorage.getItem('checkout106')
+        }
+    }
+</script>
+</html>
