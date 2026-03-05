@@ -12,90 +12,134 @@
     <h2>Check-in & Check-out Times for Room 101</h2>
     <div id="timet101">Check-ins: </div>
     <div id="timep101">Check-outs: </div>
+    <button onclick="reload101()">Refresh</button>
     <br>
     <h2>Check-in & Check-out Times for Room 102</h2>
     <div id="timet102">Check-ins: </div>
     <div id="timep102">Check-outs: </div>
+    <button onclick="reload102()">Refresh</button>
     <br>
     <h2>Check-in & Check-out Times for Room Room 103</h2>
     <div id="timet103">Check-ins: </div>
     <div id="timep103">Check-outs: </div>
+    <button onclick="reload103()">Refresh</button>
     <br>
     <h2>Check-in & Check-out Times for Room Room 104</h2>
     <div id="timet104">Check-ins: </div>
     <div id="timep104">Check-outs: </div>
+    <button onclick="reload104()">Refresh</button>
+    <br>
     <h2>Check-in & Check-out Times for Room Room 105</h2>
     <div id="timet105">Check-ins: </div>
     <div id="timep105">Check-outs: </div>
+    <button onclick="reload105()">Refresh</button>
+    <br>
     <h2>Check-in & Check-out Times for Room Room 106</h2>
     <div id="timet106">Check-ins: </div>
     <div id="timep106">Check-outs: </div>
+    <button onclick="reload106()">Refresh</button>
 </body>
 <script>
     // TIMES FOR 101
-    window.onload = function() {
+    function reload101() {
+        // Check-ins
         if (localStorage.getItem('checkin101') != null); {
             document.getElementById('timet101').innerHTML = "Check-ins: " + localStorage.getItem('checkin101')
         }
-    }
-    window.onload = function() {
+        if (localStorage.getItem('checkin101') == null); {
+            document.getElementById('timet101').innerHTML = "Check-ins: No One has Entered the Room yet"
+        }
+        // Check-outs
         if (localStorage.getItem('checkout101') != null); {
             document.getElementById('timep101').innerHTML = "Check-outs: " + localStorage.getItem('checkout101')
         }
+        if (localStorage.getItem('checkin101') == null); {
+            document.getElementById('timep101').innerHTML = "Check-outs: No One has Left the Room"
+        }
     }
     // TIMES FOR 102
-    window.onload = function() {
+    function reload102() {
+        // Check-ins
         if (localStorage.getItem('checkin102') != null); {
             document.getElementById('timet102').innerHTML = "Check-ins: " + localStorage.getItem('checkin102')
         }
-    }
-    window.onload = function() {
+        if (localStorage.getItem('checkin102') == null); {
+            document.getElementById('timet102').innerHTML = "Check-ins: No One has Entered the Room yet"
+        }
+        // Check-outs
         if (localStorage.getItem('checkout102') != null); {
             document.getElementById('timep102').innerHTML = "Check-outs: " + localStorage.getItem('checkout102')
         }
+        if (localStorage.getItem('checkin102') == null); {
+            document.getElementById('timep102').innerHTML = "Check-outs: No One has Left the Room"
+        }
     }
     // TIMES FOR 103
-    window.onload = function() {
+    function reload103() {
+        // Check-ins
         if (localStorage.getItem('checkin103') != null); {
             document.getElementById('timet103').innerHTML = "Check-ins: " + localStorage.getItem('checkin103')
         }
-    }
-    window.onload = function() {
+        if (localStorage.getItem('checkin103') == null); {
+            document.getElementById('timet103').innerHTML = "Check-ins: No One has Entered the Room yet"
+        }
+        // Check-outs
         if (localStorage.getItem('checkout103') != null); {
             document.getElementById('timep103').innerHTML = "Check-outs: " + localStorage.getItem('checkout103')
         }
+        if (localStorage.getItem('checkin103') == null); {
+            document.getElementById('timep103').innerHTML = "Check-outs: No One has Left the Room"
+        }
     }
     // TIMES FOR 104
-    window.onload = function() {
+    function reload104() {
+        // Check-ins
         if (localStorage.getItem('checkin104') != null); {
             document.getElementById('timet104').innerHTML = "Check-ins: " + localStorage.getItem('checkin104')
         }
-    }
-    window.onload = function() {
+        if (localStorage.getItem('checkin104') == null); {
+            document.getElementById('timet104').innerHTML = "Check-ins: No One has Entered the Room yet"
+        }
+        // Check-outs
         if (localStorage.getItem('checkout104') != null); {
             document.getElementById('timep104').innerHTML = "Check-outs: " + localStorage.getItem('checkout104')
         }
+        if (localStorage.getItem('checkin104') == null); {
+            document.getElementById('timep104').innerHTML = "Check-outs: No One has Left the Room"
+        }
     }
     // TIMES FOR 105
-    window.onload = function() {
+    function reload105() {
+        // Check-ins
         if (localStorage.getItem('checkin105') != null); {
             document.getElementById('timet105').innerHTML = "Check-ins: " + localStorage.getItem('checkin105')
         }
-    }
-    window.onload = function() {
+        if (localStorage.getItem('checkin105') == null); {
+            document.getElementById('timet105').innerHTML = "Check-ins: No One has Entered the Room yet"
+        }
+        // Check-outs
         if (localStorage.getItem('checkout105') != null); {
             document.getElementById('timep105').innerHTML = "Check-outs: " + localStorage.getItem('checkout105')
         }
+        if (localStorage.getItem('checkin105') == null); {
+            document.getElementById('timep105').innerHTML = "Check-outs: No One has Left the Room"
+        }
     }
     // TIMES FOR 106
-    window.onload = function() {
+    function reload106() {
+        // Check-ins
         if (localStorage.getItem('checkin106') != null); {
             document.getElementById('timet106').innerHTML = "Check-ins: " + localStorage.getItem('checkin106')
         }
-    }
-    window.onload = function() {
+        if (localStorage.getItem('checkin106') == null); {
+            document.getElementById('timet106').innerHTML = "Check-ins: No One has Entered the Room yet"
+        }
+        // Check-outs
         if (localStorage.getItem('checkout106') != null); {
             document.getElementById('timep106').innerHTML = "Check-outs: " + localStorage.getItem('checkout106')
+        }
+        if (localStorage.getItem('checkin106') == null); {
+            document.getElementById('timep106').innerHTML = "Check-outs: No One has Left the Room"
         }
     }
 </script>

@@ -14,13 +14,7 @@ function nothing1() {
         let room1flo1 = document.getElementById('eccono101').value
         full101.push(room1flo1)
         over101.push(room1flo1)
-        let enter101 = room1flo1 + Date()
-        teimo101.push(enter101)
-        localStorage.setItem('checkin101',teimo101)
         document.getElementById('occupant101').innerHTML = "occupant(s): " + full101
-        // save array it is ok to overwrite the key
-        let local101 = localStorage.setItem('room101',over101)
-        allcheckins.push(local101)
         document.getElementById('eccono101').value = ""
         document.getElementById('overflow101').innerHTML = ""
         document.getElementById('wrong101').innerHTML = ""
