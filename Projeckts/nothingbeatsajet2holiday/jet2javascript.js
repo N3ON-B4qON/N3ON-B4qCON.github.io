@@ -1,37 +1,56 @@
 // ROOM 101
+// this is for the lock room function
 let access101 = "unlocked"
-let dissable101 = false
+// this is the counter of how many people are in the room.
 let max101 = 0
+// the array to display the people in a room.
 let full101 = []
+// 
 let kicked101 = []
+// the other 2 arrays are used for date-time
 let teimo101 = []
 let tiemo101 = []
 // add person to room
 function nothing1() {
+    // the conditional is to check how many people are in the room
     if (max101 < 4) {
+        // if there are less than 4 people 1 person will be added & the counter will go up.
         max101 +=1
+        // take the input value & turn it into a variable
         let room1flo1 = document.getElementById('eccono101').value
+        // add the variable into an array
         full101.push(room1flo1)
+        // update the div box in the html to display the array
         document.getElementById('occupant101').innerHTML = "occupant(s): " + full101
+        // the last 3 lines is to clear the input field & to remove the messages that pop up when theres either too many people or if someone clicked the remove button by accident.
         document.getElementById('eccono101').value = ""
         document.getElementById('overflow101').innerHTML = ""
         document.getElementById('wrong101').innerHTML = ""
     }
     else {
+        // if the room is full display the message in the div box & clear the input field
         document.getElementById('overflow101').innerHTML = "The room is full"
         document.getElementById('eccono101').value = ""
     }
 }
 // remove speciffic person from room
 function beats1() {
+    // take the value from the input field & turn it into a vaiable.
     let compare101 = document.getElementById('eccono101').value
+    // compare the vairable to the people in the array
     if (compare101 == full101[0] || compare101 == full101[1] || compare101 == full101[2] || compare101 == full101[3]) {
         if (compare101 == full101[0]) {
+            // subtract one from the count to adjust how many people are in the room now.
             max101 -=1
             // Remove Guest Part
+            // splice the guest out of the array to show they have been removed/checked out
             kicked101 = full101.splice(0,1)
+            document.getElementById('removal').innerHTML = kicked101
+            // refresh list to new one
             document.getElementById('occupant101').innerHTML = "occupant(s): " + full101
+            // this is to remove the message that pops up when the remove button is clicked but doesnt match a person in the room
             document.getElementById('wrong101').innerHTML = ""
+            // this was just to see if the conditional would register
             console.log('it worked')
         }
         else if (compare101 == full101[1]) {
@@ -62,40 +81,47 @@ function beats1() {
         document.getElementById('eccono101').value = ""
     }
     else {
+        // if the variable doesn't match with anyone, display this message in the div box.
         document.getElementById('wrong101').innerHTML = "There is no one in this room with the same name. Maybe they're in a different one."
     }
 }
 // remove everyone from room
 function a_jet21() {
+    // reset the count to zero
     max101 = 0
+    // to see if it works
     console.log('reset to 0')
+    // clear the array
     full101 = []
+    // refesh what the div box displays
     document.getElementById('occupant101').innerHTML = "occupant(s): " + full101
 }
 // lock room
 function holiday1() {
-    let addone101 = document.getElementById('addone101')
-    let removeone101 = document.getElementById('removeone101')
-    let removeall101 = document.getElementById('removeall101')
     if (access101 == "unlocked") {
+        // set the buttons disabled value to true to make them unuseable.
         document.getElementById('addone101').disabled = true
         document.getElementById('removeone101').disabled = true
         document.getElementById('removeall101').disabled = true
+        // change what the button says in the html.
         document.getElementById('lockunlock101').innerHTML = "Unlock (To Manage Guests)"
+        // set the variable to 'locked' so the buttons unlock upon next press
         access101 = "locked"
     }
     else {
+        // set the buttons disabled value to false to make them useable
         document.getElementById('addone101').disabled = false
         document.getElementById('removeone101').disabled = false
         document.getElementById('removeall101').disabled = false
+        // change what the button says in the html
         document.getElementById('lockunlock101').innerHTML = "Lock (To Clean)"
+        // set the variable to 'unlocked' so the buttons lock upon next press
         access101 = "unlocked"
     }
 }
 
 // ROOM 102
 let access102 = "unlocked"
-let dissable102 = false
 let max102= 0
 let full102 = []
 let kicked102 = []
@@ -169,9 +195,6 @@ function a_jet22() {
 }
 // lock room
 function holiday2() {
-    let addone102 = document.getElementById('addone102')
-    let removeone102 = document.getElementById('removeone102')
-    let removeall102 = document.getElementById('removeall102')
     if (access102 == "unlocked") {
         document.getElementById('addone102').disabled = true
         document.getElementById('removeone102').disabled = true
@@ -190,7 +213,6 @@ function holiday2() {
 
 // ROOM 103
 let access103 = "unlocked"
-let dissable103 = false
 let max103 = 0
 let full103 = []
 let kicked103 = []
@@ -264,9 +286,6 @@ function a_jet23() {
 }
 // lock room
 function holiday3() {
-    let addone103 = document.getElementById('addone103')
-    let removeone103 = document.getElementById('removeone103')
-    let removeall103 = document.getElementById('removeall103')
     if (access103 == "unlocked") {
         document.getElementById('addone103').disabled = true
         document.getElementById('removeone103').disabled = true
@@ -285,7 +304,6 @@ function holiday3() {
 
 // ROOM 104
 let access104 = "unlocked"
-let dissable104 = false
 let max104 = 0
 let full104 = []
 let kicked104 = []
@@ -359,9 +377,6 @@ function a_jet24() {
 }
 // lock room
 function holiday4() {
-    let addone104 = document.getElementById('addone104')
-    let removeone104 = document.getElementById('removeone104')
-    let removeall104 = document.getElementById('removeall104')
     if (access104 == "unlocked") {
         document.getElementById('addone104').disabled = true
         document.getElementById('removeone104').disabled = true
@@ -380,7 +395,6 @@ function holiday4() {
 
 // ROOM 105
 let access105 = "unlocked"
-let dissable105 = false
 let max105 = 0
 let full105 = []
 let kicked105 = []
@@ -454,9 +468,6 @@ function a_jet25() {
 }
 // lock room
 function holiday5() {
-    let addone105 = document.getElementById('addone105')
-    let removeone105 = document.getElementById('removeone105')
-    let removeall105 = document.getElementById('removeall105')
     if (access105 == "unlocked") {
         document.getElementById('addone105').disabled = true
         document.getElementById('removeone105').disabled = true
@@ -475,7 +486,6 @@ function holiday5() {
 
 // ROOM 106
 let access106 = "unlocked"
-let dissable106 = false
 let max106 = 0
 let full106 = []
 let kicked106 = []
@@ -549,9 +559,6 @@ function a_jet26() {
 }
 // lock room
 function holiday6() {
-    let addone106 = document.getElementById('addone106')
-    let removeone106 = document.getElementById('removeone106')
-    let removeall106 = document.getElementById('removeall106')
     if (access106 == "unlocked") {
         document.getElementById('addone106').disabled = true
         document.getElementById('removeone106').disabled = true
